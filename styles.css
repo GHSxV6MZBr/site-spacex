@@ -41,7 +41,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-.nav__link {
+.nav__link, .header__link {
     font-size: 13px;
 }
 .header__right {
@@ -50,9 +50,6 @@ body {
     align-items: center;
     gap: 20px;
     position: relative;
-}
-.header__link {
-    font-size: 13px;
 }
 .hamburger {
     display: flex;
@@ -135,16 +132,39 @@ main {
     grid-template-columns: 100vw;
     grid-auto-rows: 100vh;
 }
-.a {
+.section__one {
     background-image: url(spacex1.webp);
     background-position: center;
     background-size: cover;
 }
-.b {
+.section__content {
+    position: absolute;
+    bottom: 15%;
+    left: 50px;
+    width: 250px;
+}
+.headings {
+    color: #fff;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.button {
+    font-size: 13px;
+    padding: 15px 47px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+.section__two {
     background-image: url(spacex2.webp);
     background-position: center;
     background-size: cover;
-}
-.fill-white {
-    fill: #fff;
 }
