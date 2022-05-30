@@ -47,6 +47,7 @@ ul {
     width: 210px;
     padding-left: 20px;
     margin-top: 8px;
+    outline: none;
 }
 .header__logo {
     fill: #fff;
@@ -67,6 +68,7 @@ ul {
 .nav__link, .header__link {
     font-size: 13px;
     letter-spacing: 0.02rem;
+    outline: none;
 }
 .nav__link::after, .header__link::after {
     content: '';
@@ -78,7 +80,7 @@ ul {
     background: #fff;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .header__link::after {
     width: 31.37px;
@@ -147,6 +149,10 @@ ul {
     font-size: 15px;
     font-weight: 100;
     transition: color 0.3s ease-in-out;
+    outline: none;
+}
+.cross {
+    outline: none;
 }
 .hamburger-nav__link:hover {
     color: #8b939b;
@@ -218,6 +224,7 @@ h1 {
     font-size: 13px;
     border: 2px solid #fff;
     margin-top: 20px;
+    outline: none;
 }
 .button:hover {
     z-index: 999;
@@ -249,6 +256,15 @@ h1 {
 .section--two {
     background-image: url(spacex2.webp);
 }
+.section--three {
+    background-image: url(spacex3.webp);
+}
+.section--four {
+    background-image: url(spacex4.webp);
+}
+.section--five {
+    background-image: url(spacex5.webp);
+}
 
 /* Footer */
 
@@ -261,6 +277,7 @@ h1 {
     align-items: center;
     gap: 40px;
     height: 100%;
+    padding: 0;
     margin: 0;
 }
 .list__no-link {
@@ -269,10 +286,12 @@ h1 {
     font-weight: 100;
     color: #979797;
     text-transform: uppercase;
+    padding-top: 2px;
 }
 .footer__link {
     font-size: 12px;
     transition: color 0.5s ease-in-out;
+    outline: none;
 }
 .footer__link:hover {
     color: #8b939b;
