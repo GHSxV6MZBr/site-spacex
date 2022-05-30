@@ -17,6 +17,10 @@ body {
     src: url(D-Din.otf);
 }
 
+ul {
+    list-style: none;
+}
+
 /* Header */
 
 .header {
@@ -244,4 +248,32 @@ h1 {
 }
 .section--two {
     background-image: url(spacex2.webp);
+}
+
+/* Footer */
+
+.footer {
+    height: 100px;
+}
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    margin: 0;
+}
+.list__no-link {
+    font-family: 'D-Din';
+    font-size: 12px;
+    font-weight: 100;
+    color: #979797;
+    text-transform: uppercase;
+}
+.footer__link {
+    font-size: 12px;
+    transition: color 0.5s ease-in-out;
+}
+.footer__link:hover {
+    color: #8b939b;
 }
