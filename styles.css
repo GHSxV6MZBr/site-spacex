@@ -21,6 +21,7 @@ body {
 
 .header {
     position: fixed; /* Had difficulty with the header when I fixed the position. Solved it by putting another div inside the header as the content container, then set header width to 100%.*/
+    z-index: 1;
     width: 100%; 
     height: 100px;
 }
@@ -119,7 +120,7 @@ body {
 }
 .header__hamburger-slider {
     position: absolute;
-    top: -42px;
+    top: -43px;
     left: 124px;
     width: 350px;
     height: 100vh;
@@ -175,8 +176,8 @@ main {
     grid-template-columns: 100vw;
     grid-auto-rows: 100vh;
 }
-.section__one {
-    background-image: url(spacex1.webp);
+.section__background {
+    position: relative;
     background-position: center;
     background-size: cover;
 }
@@ -184,7 +185,7 @@ main {
     position: absolute;
     bottom: 18%;
     left: 50px;
-    width: 350px;
+    width: 500px;
     padding-left: 20px;
 }
 .headings {
@@ -203,9 +204,14 @@ h1 {
     text-shadow: 0 0 2px #555;
 }
 .button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 152px;
+    height: 47px;
     font-size: 13px;
-    padding: 15px 47px;
     border: 2px solid #fff;
     margin-top: 20px;
 }
@@ -230,8 +236,12 @@ h1 {
     transform: scaleY(1);
     transform-origin: bottom;
 }
-.section__two {
+
+/* Sections */
+
+.section--one {
+    background-image: url(spacex1.webp);
+}
+.section--two {
     background-image: url(spacex2.webp);
-    background-position: center;
-    background-size: cover;
 }
